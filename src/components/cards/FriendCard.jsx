@@ -1,9 +1,11 @@
 import React from 'react'
 import Image from 'next/image';
+import Link from 'next/link';
 
 const FriendCard = ({ friend }) => {
     return (
-        <div className="flex flex-col items-center p-6 bg-foreground rounded-lg shadow-sm border border-gray-100 text-center">
+        <Link href={`/friends/${friend.id}`} className="flex flex-col items-center p-6 bg-foreground rounded-lg shadow-sm border border-gray-100 text-center
+        hover:border-green-600 hover:shadow-lg transition-all duration-300">
             {/* Profile Image Container */}
             <div className="relative w-20 h-20 mb-3">
                 <Image
@@ -32,7 +34,7 @@ const FriendCard = ({ friend }) => {
             <span className={`px-4 py-1.5 ${ friend.status === 'almost due' ? 'bg-[#efad44]' : friend.status === 'overdue' ? 'bg-[#ef4444]' : friend.status === 'on-track' ? 'bg-[#244d3f]' : 'bg-gray-300'} text-white text-sm font-medium rounded-full shadow-md`}>
                 {friend.status === 'almost due' ? 'Almost Due' : friend.status === 'overdue' ? 'Overdue' : friend.status === 'on-track' ? 'On-Track' : 'null'}
             </span>
-        </div>
+        </Link>
     )
 }
 
