@@ -4,6 +4,7 @@ import FriendList from "@/components/sections/FriendList";
 import Hero from "@/components/sections/Hero";
 import { Suspense } from "react";
 
+
 //  text-lg text-text-primary font-semibold
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Suspense fallback={<CssSpinner />}>
         <FriendList />
       </Suspense>
+
     </div>
   );
 }

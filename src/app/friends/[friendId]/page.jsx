@@ -1,9 +1,12 @@
+import { wait } from '@/utils/utils';
 import React from 'react'
 
-const page = () => {
+const FriendDetailsPage = async ({ params }) => {
+  await wait(5000);
+  const { friendId } = await params
   return (
-    <div>page</div>
+    <div>My Post: {friendId}</div>
   )
 }
 
-export default page
+export default FriendDetailsPage
