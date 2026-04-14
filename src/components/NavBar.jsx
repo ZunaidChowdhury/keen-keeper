@@ -18,7 +18,7 @@ const NavBar = () => {
         // wrapper 
         <div className='w-full bg-foreground border-b border-b-zinc-300 py-4'>
             {/* container */}
-            <nav className='max-w-[90rem] mx-auto flex justify-between items-center'>
+            <nav className='max-w-360 mx-auto flex justify-between items-center'>
                 {/* left  */}
                 <Link href='/'>
                     <Image

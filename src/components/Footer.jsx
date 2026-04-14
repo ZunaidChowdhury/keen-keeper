@@ -9,9 +9,9 @@ import twitterImg from '../../public/assets/twitter.png'
 const Footer = () => {
     return (
         // wrapper
-        <div className='w-full bg-theme-primary pt-20 pb-[1.875rem]'>
+        <div className='w-full bg-theme-primary pt-20 pb-7.5'>
             {/* container */}
-            <div className='max-w-[63.375rem] mx-auto text-white'>
+            <div className='max-w-277.5 mx-auto text-white'>
                 {/* top */}
                 <div className='mb-10 flex flex-col justify-center items-center'>
                     <h3 className='text-white text-7xl font-bold w-fit mb-4'>
