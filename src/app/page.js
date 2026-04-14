@@ -5,15 +5,18 @@ import Spinner from "@/components/Spinner";
 import Image from "next/image";
 import { Suspense } from "react";
 
-
+//  text-lg text-text-primary font-semibold
 export default function Home() {
   return (
     <div className="min-h-screen ">
       <Hero />
       <Divider />
-      <Suspense fallback={<div className="max-w-277.5 mx-auto h-60 mb-20 flex items-center justify-center text-lg text-text-primary font-semibold">
-        Loading...
-      </div>}>
+      <Suspense fallback={
+        <div className="max-w-277.5 mx-auto h-60 mb-20 flex items-center justify-center">
+          {/* Loading... */}
+          <Spinner />
+        </div>
+      }>
         <FriendList />
       </Suspense>
     </div>
