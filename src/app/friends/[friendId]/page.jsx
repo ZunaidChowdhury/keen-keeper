@@ -13,6 +13,7 @@ import { MdOutlineArchive, MdOutlineTextsms } from 'react-icons/md';
 import { PiVideoCameraLight } from 'react-icons/pi';
 import { RiDeleteBin6Line, RiNotificationSnoozeLine } from 'react-icons/ri';
 import { SiInteractiondesignfoundation } from 'react-icons/si';
+import { TbBrandMeetup } from 'react-icons/tb';
 
 const recentInteractions = [
   {
@@ -22,7 +23,7 @@ const recentInteractions = [
     date: 'Jan 28, 2026',
   },
   {
-    icon: LuPhoneCall,
+    icon: TbBrandMeetup,
     iType: 'Meetup',
     details: 'Industry conference meetup',
     date: 'Jan 28, 2026',

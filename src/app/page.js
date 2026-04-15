@@ -1,5 +1,6 @@
 import CssSpinner from "@/components/CssSpinner";
 import Divider from "@/components/Divider";
+import ScrollToTop from "@/components/ScrollToTop";
 import FriendList from "@/components/sections/FriendList";
 import Hero from "@/components/sections/Hero";
 import { Suspense } from "react";
@@ -9,6 +10,7 @@ import { Suspense } from "react";
 export default function Home() {
   return (
     <div >
+      <ScrollToTop />
       <Hero />
       <Divider />
       <Suspense fallback={<CssSpinner />}>
