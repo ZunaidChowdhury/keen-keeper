@@ -1,4 +1,5 @@
 'use client'
+import { getActivityFromLocalStorage, saveActivityToLocalStorage } from '@/utils/localStorage';
 import React, { createContext, useEffect, useState } from 'react'
 import { Bounce, toast } from 'react-toastify';
 
@@ -9,39 +10,39 @@ const GlobalContextProvider = ({ children }) => {
 
 
     const handleCall = (friend) => {
-        const newData = {
+        const activity = {
             type: 'Call',
             friendName: friend.name,
             date: new Date().toISOString(),
         }
 
-        setUserActivity([...userActivity, newData]);
-
+        setUserActivity([...userActivity, activity]);
+        saveActivityToLocalStorage(activity);
         toast.success(`Call with ${friend.name}`);
     }
 
     const handleText = (friend) => {
-        const newData = {
+        const activity = {
             type: 'Text',
             friendName: friend.name,
             date: new Date().toISOString(),
         }
 
-        setUserActivity([...userActivity, newData]);
-
+        setUserActivity([...userActivity, activity]);
+        saveActivityToLocalStorage(activity);
         toast.success(`Text with ${friend.name}`);
     }
 
-    
+
     const handleVideo = (friend) => {
-        const newData = {
+        const activity = {
             type: 'Video',
             friendName: friend.name,
             date: new Date().toISOString(),
         }
 
-        setUserActivity([...userActivity, newData]);
-
+        setUserActivity([...userActivity, activity]);
+        saveActivityToLocalStorage(activity);
         toast.success(`Video with ${friend.name}`);
     }
 
@@ -54,14 +55,11 @@ const GlobalContextProvider = ({ children }) => {
     };
 
     useEffect(() => {
-
+        const userActivity = getActivityFromLocalStorage();
+        setUserActivity(userActivity);
         console.log('context data: ', userActivity);
-        // const localReadlist = getReadlistFromLocalStorage();
-        // setReadBooks(localReadlist);
-        // const localWishlist = getWishlistFromLocalStorage();
-        // setWishBooks(localWishlist)
+    }, [])
 
-    })
 
     return (
         <GlobalContext.Provider value={data}>
