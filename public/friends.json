@@ -7,7 +7,7 @@
     "days_since_contact": 2,
     "status": "almost due",
     "tags": ["WORK"],
-    "bio": "Senior Project Manager specializing in agile workflows and team leadership.",
+    "bio": "Former manager, agile expert",
     "goal": 70,
     "next_due_date": "2026-04-20"
   },
@@ -19,7 +19,7 @@
     "days_since_contact": 5,
     "status": "overdue",
     "tags": ["FAMILY"],
-    "bio": "Cousin based in Seattle. Enjoys organizing family reunions and holiday events.",
+    "bio": "Favorite cousin, event organizer",
     "goal": 30,
     "next_due_date": "2026-03-15"
   },
@@ -31,7 +31,7 @@
     "days_since_contact": 1,
     "status": "overdue",
     "tags": ["WORK"],
-    "bio": "Lead UX Designer with a passion for accessible and minimalist interface design.",
+    "bio": "Creative lead, design mentor",
     "goal": 45,
     "next_due_date": "2026-03-25"
   },
@@ -43,7 +43,7 @@
     "days_since_contact": 1,
     "status": "overdue",
     "tags": ["HOBBY", "TRAVEL"],
-    "bio": "Travel photographer and hiker. Met during a backpacking trip in Patagonia.",
+    "bio": "Travel buddy, photography pro",
     "goal": 30,
     "next_due_date": "2026-03-10"
   },
@@ -55,7 +55,7 @@
     "days_since_contact": 4,
     "status": "overdue",
     "tags": ["WORK"],
-    "bio": "Software Architect focused on blockchain and secure payment systems.",
+    "bio": "Tech architect, blockchain wiz",
     "goal": 30,
     "next_due_date": "2026-03-22"
   },
@@ -67,7 +67,7 @@
     "days_since_contact": 9,
     "status": "on-track",
     "tags": ["FAMILY"],
-    "bio": "Aunt who loves gardening and sharing heirloom tomato seeds every spring.",
+    "bio": "Beloved aunt, gardening expert",
     "goal": 90,
     "next_due_date": "2026-05-12"
   },
@@ -79,7 +79,7 @@
     "days_since_contact": 1,
     "status": "on-track",
     "tags": ["WORK"],
-    "bio": "Business strategy consultant with expertise in market expansion in LATAM.",
+    "bio": "Strategy partner, market expert",
     "goal": 90,
     "next_due_date": "2026-05-18"
   },
@@ -91,7 +91,7 @@
     "days_since_contact": 25,
     "status": "almost due",
     "tags": ["HOBBY", "TRAVEL"],
-    "bio": "Street photographer based in London. Always looking for the perfect shot.",
+    "bio": "Street artist, London explorer",
     "goal": 60,
     "next_due_date": "2026-04-28"
   },
@@ -103,7 +103,7 @@
     "days_since_contact": 50,
     "status": "almost due",
     "tags": ["WORK"],
-    "bio": "DevOps Engineer who loves automating deployments and cloud infrastructure.",
+    "bio": "DevOps guru, automation fan",
     "goal": 75,
     "next_due_date": "2026-04-25"
   },
@@ -115,7 +115,7 @@
     "days_since_contact": 33,
     "status": "overdue",
     "tags": ["FAMILY"],
-    "bio": "Sister who works as a veterinarian and loves sharing pet health tips.",
+    "bio": "Caring sister, pet specialist",
     "goal": 21,
     "next_due_date": "2026-03-05"
   },
@@ -127,7 +127,7 @@
     "days_since_contact": 2,
     "status": "overdue",
     "tags": ["WORK"],
-    "bio": "Content Strategist and SEO expert. Met at a digital marketing workshop.",
+    "bio": "SEO partner, content master",
     "goal": 30,
     "next_due_date": "2026-03-12"
   },
@@ -139,7 +139,7 @@
     "days_since_contact": 7,
     "status": "on-track",
     "tags": ["HOBBY", "TRAVEL"],
-    "bio": "Mountain biker and outdoor educator. Leads weekend trails in the Rockies.",
+    "bio": "Outdoor guide, cycling enthusiast",
     "goal": 120,
     "next_due_date": "2026-06-15"
   }

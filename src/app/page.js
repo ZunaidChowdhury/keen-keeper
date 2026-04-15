@@ -8,7 +8,7 @@ import { Suspense } from "react";
 //  text-lg text-text-primary font-semibold
 export default function Home() {
   return (
-    <div className="min-h-screen ">
+    <div >
       <Hero />
       <Divider />
       <Suspense fallback={<CssSpinner />}>
