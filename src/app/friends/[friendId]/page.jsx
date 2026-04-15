@@ -1,5 +1,7 @@
 import RecentInteraction from '@/components/cards/RecentInteraction';
+import Interactions from '@/components/Interactions';
 import NotFound from '@/components/NotFound';
+
 import { formatDate, wait } from '@/utils/utils';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -42,7 +44,9 @@ const recentInteractions = [
 
 const FriendDetailsPage = async ({ params }) => {
 
-  await wait(2200);
+
+
+  await wait(2000);
   let friend = null;
   const { friendId } = await params
   if (isNaN(Number(friendId))) {
@@ -74,6 +78,7 @@ const FriendDetailsPage = async ({ params }) => {
   }
 
 
+  // logic ends
 
   return (
     // container
@@ -186,20 +191,7 @@ const FriendDetailsPage = async ({ params }) => {
               Quick Check-In
             </h3>
             <div className='grid grid-cols-3 gap-4'>
-              <button className='text-text-primary hover:text-white  cursor-pointer flex flex-col items-center justify-center  w-full bg-background hover:bg-theme-primary transition-all  duration-300 active:translate-y-[2px] rounded-lg border border-gray-200  py-4 '>
-                <LuPhoneCall className=' w-8 h-8 mb-2' />
-                <span className='text-lg'>Call</span>
-              </button>
-
-              <button className='text-text-primary hover:text-white  cursor-pointer flex flex-col items-center justify-center  w-full bg-background hover:bg-theme-primary transition-all  duration-300 active:translate-y-[2px] rounded-lg border border-gray-200  py-4 '>
-                <MdOutlineTextsms className=' w-8 h-8 mb-2' />
-                <span className='text-lg'>Text</span>
-              </button>
-
-              <button className='text-text-primary hover:text-white  cursor-pointer flex flex-col items-center justify-center  w-full bg-background hover:bg-theme-primary transition-all  duration-300 active:translate-y-[2px] rounded-lg border border-gray-200  py-4 '>
-                <PiVideoCameraLight className=' w-8 h-8 mb-2' />
-                <span className='text-lg'>Video</span>
-              </button>
+              <Interactions friend={friend} />
             </div>
           </div>
         </div>
@@ -218,7 +210,7 @@ const FriendDetailsPage = async ({ params }) => {
             {
               recentInteractions.map((interaction, i) => (
                 <div key={i}>
-                  <RecentInteraction  interaction={interaction} />
+                  <RecentInteraction interaction={interaction} />
                   {i === recentInteractions.length - 1 ? null : <div className='w-full h-px bg-gray-200' />}
                 </div>
               ))
