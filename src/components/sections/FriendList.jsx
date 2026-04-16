@@ -30,13 +30,13 @@ const FriendList = async () => {
 
 
     return (
-        <div className='max-w-277.5 mx-auto pb-20'>
+        <div className='px-4  max-w-285.5 mx-auto pb-10 tablet:pb-20'>
             <h3 className='text-text-primary text-2xl font-semibold mb-4'>
                 Your Friends
             </h3>
 
             {/* Friend list  */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 tablet:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {
                     friendListData.map(friend => <FriendCard key={friend.id} friend={friend} />)
                 }

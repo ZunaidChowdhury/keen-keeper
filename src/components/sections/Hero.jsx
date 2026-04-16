@@ -4,7 +4,7 @@ import { IoMdAdd } from 'react-icons/io'
 const Hero = () => {
     return (
         // container
-        <div className=' px-4  max-w-285.5 mx-auto  pt-10 tablet:pt-20 flex flex-col items-center'>
+        <div className=' px-4  max-w-285.5 mx-auto  pt-10 tablet:pt-20 flex flex-col items-center '>
             <h2 className='text-center text-text-primary text-4xl tablet:text-5xl font-bold mb-4'>
                 Friends to keep close in your life
             </h2>
@@ -21,7 +21,7 @@ const Hero = () => {
             </button>
 
             {/* dashboard cards */}
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
+            <div className='w-full grid grid-cols-1 tablet:grid-cols-2 lg:grid-cols-4 gap-6'>
                 {/* c1 */}
                 <div className=' bg-foreground rounded-lg p-8 text-center  shadow-md border border-gray-200'>
                     <h3 className='text-theme-primary text-[2rem] font-semibold m-0'>

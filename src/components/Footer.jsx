@@ -9,15 +9,15 @@ import twitterImg from '../../public/assets/twitter.png'
 const Footer = () => {
     return (
         // wrapper
-        <div className='w-full bg-theme-primary pt-20 pb-7.5'>
+        <div className='w-full bg-theme-primary pt-10 tablet:pt-20 pb-7.5'>
             {/* container */}
             <div className='px-4  max-w-285.5 mx-auto text-white'>
                 {/* top */}
                 <div className='mb-10 flex flex-col justify-center items-center'>
-                    <h3 className='text-white text-7xl font-bold w-fit mb-4'>
+                    <h3 className='text-white text-4xl tablet:text-7xl font-bold text-center w-fit mb-4'>
                         Keen<span className='font-medium'>Keeper</span>
                     </h3>
-                    <p className='text-base mb-6 opacity-70'>
+                    <p className='text-base mb-6 opacity-70 text-center'>
                         Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.
                     </p>
 
@@ -60,9 +60,9 @@ const Footer = () => {
                 <div className='w-full h-px bg-white opacity-30 mb-7' />
 
                 {/* bottom*/}
-                <div className='text-white text-base flex items-center justify-between'>
-                    <p className='opacity-50'>© 2026 KeenKeeper. All rights reserved.</p>
-                    <div className='flex gap-8'>
+                <div className='text-white text-base flex flex-col items-center md:flex-row md:items-center md:justify-between'>
+                    <p className='opacity-50 text-center md:text-left mb-6 md:mb-0'>© 2026 KeenKeeper. All rights reserved.</p>
+                    <div className='flex flex-col items-center gap-4 md:flex-row md:gap-8'>
                         <Link href={`/`} className='opacity-50 hover:opacity-100 hover:underline transition-all duration-300'>Privacy Policy</Link>
                         <Link href={`/`} className='opacity-50 hover:opacity-100 hover:underline transition-all duration-300'>Terms of Service</Link>
                         <Link href={`/`} className='opacity-50 hover:opacity-100 hover:underline transition-all duration-300'>Cookies</Link>
