@@ -83,7 +83,7 @@ const FriendDetailsPage = async ({ params }) => {
 
   return (
     // container
-    <div className='max-w-277.5 mx-auto my-20 grid grid-cols-[350px_736px] gap-6'>
+    <div className='px-4  max-w-285.5 mx-auto py-20 grid grid-cols-1 lg:grid-cols-[350fr_736fr] gap-6'>
       {/* My Post: {friendId} */}
 
       {/* left */}
@@ -119,7 +119,7 @@ const FriendDetailsPage = async ({ params }) => {
           </div>
 
 
-          <p className="text-base text-text-secondary font-medium italic mb-2">{friend.bio}</p>
+          <p className="text-base text-text-secondary font-medium italic mb-2 text-center">{friend.bio}</p>
           <p className="text-sm text-text-secondary">{friend.email}</p>
         </div>
 
@@ -144,30 +144,30 @@ const FriendDetailsPage = async ({ params }) => {
       {/* right */}
       <div className='space-y-6'>
         {/* c1 */}
-        <div className='grid grid-cols-3 gap-6'>
-          <div className=' bg-foreground rounded-lg shadow-sm py-8 px-4 text-center'>
-            <h3 className='text-theme-primary text-[1.875rem] font-semibold m-0'>
+        <div className='grid grid-cols-1 tablet:grid-cols-2 md:grid-cols-3 gap-6'>
+          <div className=' bg-foreground rounded-lg shadow-sm py-8 px-4 flex flex-col items-center justify-center '>
+            <h3 className='text-theme-primary text-[1.875rem] font-semibold text-center'>
               {friend.days_since_contact}
             </h3>
-            <p className='text-text-secondary text-lg'>
+            <p className='text-text-secondary text-lg text-center'>
               Days Since Contact
             </p>
           </div>
 
-          <div className=' bg-foreground rounded-lg shadow-sm py-8 px-4 text-center'>
-            <h3 className='text-theme-primary text-[1.875rem] font-semibold m-0'>
+          <div className=' bg-foreground rounded-lg shadow-sm py-8 px-4 flex flex-col items-center justify-center'>
+            <h3 className='text-theme-primary text-[1.875rem] font-semibold text-center'>
               {friend.goal}
             </h3>
-            <p className='text-text-secondary text-lg'>
+            <p className='text-text-secondary text-lg text-center'>
               Goal (Days)
             </p>
           </div>
 
-          <div className=' bg-foreground rounded-lg shadow-sm py-8 px-4 text-center'>
-            <h3 className='text-theme-primary text-[1.875rem] font-semibold m-0'>
+          <div className=' bg-foreground rounded-lg shadow-sm py-8 px-4 flex flex-col items-center justify-center'>
+            <h3 className='text-theme-primary text-[1.875rem] font-semibold text-center'>
               {formatDate(friend.next_due_date)}
             </h3>
-            <p className='text-text-secondary text-lg'>
+            <p className='text-text-secondary text-lg text-center'>
               Next Due
             </p>
           </div>
@@ -192,7 +192,7 @@ const FriendDetailsPage = async ({ params }) => {
             <h3 className='text-theme-primary text-[1.25rem] font-medium mb-4'>
               Quick Check-In
             </h3>
-            <div className='grid grid-cols-3 gap-4'>
+            <div className='grid grid-cols-1 xs:grid-cols-3 gap-4'>
               <Interactions friend={friend} />
             </div>
           </div>

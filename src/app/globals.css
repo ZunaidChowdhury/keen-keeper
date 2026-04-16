@@ -36,6 +36,8 @@ html {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
+  --breakpoint-xs: 28rem;
+  /* 448px */
   --breakpoint-tablet: 36rem;
   /* 576px */
   --breakpoint-desktop: 62rem;
