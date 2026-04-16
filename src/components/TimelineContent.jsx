@@ -84,12 +84,12 @@ const TimelineContent = () => {
     return (
         <div>
             {/* dropdown  */}
-            <div className='mb-6 flex items-center justify-between'>
+            <div className='mb-6 flex flex-col md:flex-row md:items-center md:justify-between'>
                 <div className="dropdown dropdown-start ">
                     <div
                         tabIndex={0}
                         role="button"
-                        className="btn m-1 w-85 text-lg font-medium flex justify-between items-center px-4 py-6 bg-white border-neutral-200 hover:bg-neutral-50 text-left"
+                        className="btn w-full md:w-85 text-lg font-medium flex justify-between items-center px-4 py-6 bg-white border-neutral-200 hover:bg-neutral-50 text-left"
                     >
                         <span>Filter timeline</span>
                         <LuChevronDown className="w-5 h-5 opacity-60" />
@@ -97,7 +97,7 @@ const TimelineContent = () => {
 
                     <ul
                         tabIndex={-1}
-                        className="dropdown-content menu bg-base-100 rounded-box z-1 p-2 shadow-sm w-85 border border-neutral-100"
+                        className="dropdown-content menu bg-base-100 rounded-box z-1 p-2 shadow-sm w-full md:w-85 border border-neutral-100"
                     >
                         <li ><button onClick={() => handleFilter('all')} className='text-lg font-medium px-2 py-2'>All</button></li>
                         <li ><button onClick={() => handleFilter('text')} className='text-lg font-medium px-2 py-2'>Text</button></li>
@@ -109,7 +109,7 @@ const TimelineContent = () => {
 
                 {/* search box */}
                 <div
-                    className="flex  items-center w-full tablet:max-w-[18.75rem] h-[2.75rem] border border-[#e4e4e7FF] rounded-[.25rem] p-4 focus-within:border-theme-primary transition-all duration-300"
+                    className="flex  items-center w-full mt-3 md:mt-0 md:max-w-75 h-11 border border-[#e4e4e7FF] rounded-sm p-4 focus-within:border-theme-primary transition-all duration-300"
                 >
                     {/* Search Icon */}
                     <svg
@@ -151,8 +151,8 @@ const TimelineContent = () => {
                                 <ActivityTimeline key={i} activity={activity} />
                             ))
                     }
-                </div> : <div className='bg-foreground rounded-lg shadow-sm border border-gray-200 p-8'>
-                    <NoDataCard title='No interaction history yet' description='All of your interactions will appear here.' />
+                </div> : <div className='bg-foreground rounded-lg shadow-sm border border-gray-200 p-4 tablet:p-8'>
+                    <NoDataCard title='No history yet' description='All of your interactions will appear here.' />
                 </div>
             }
         </div>
