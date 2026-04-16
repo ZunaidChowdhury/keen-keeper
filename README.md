@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 Keen Keeper
 
-## Getting Started
+This is an assignment (#7) project of MERN stack course in programming hero batch 13.
 
-First, run the development server:
+Keen Keeper is a streamlined social activity tracker designed to help users maintain and monitor their digital interactions. Built for the modern social connector, it logs every "ping"—be it a call, text, or video chat—into a clean, searchable timeline, providing visual insights into social habits through interactive data analytics.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Live on Netlify - https://keen-keeper-six-inky.vercel.app/
+<br/>
+<br/>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Technology Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+<strong>Framework:</strong> Next.js 16 (App Router)<br/>
+<strong>Library:</strong> React 19<br/>
+<strong>Styling:</strong> Tailwind CSS v4 & DaisyUI<br/>
+<strong>State Management:</strong> React Context API, Local Storage<br/>
+<strong>Charts:</strong> Recharts (PieChart)<br/>
+<strong>Notifications:</strong> React-Toastify<br/>
+<strong>Icons:</strong> React Icons<br/><br/>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Key Features
 
-## Learn More
+1. <strong>Real-Time Interaction Logging</strong><br/>
+   Trigger instant social actions (Call, Text, Video) through an intuitive UI. Each action uses React-Toastify for immediate feedback and is automatically saved to the global activity state with precise timestamps and metadata via the Context API.<br/>
+2. <strong>Advanced Activity Timeline</strong><br/>
+   A robust history feed that allows users to revisit their interactions. It features:
+   Multi-Criteria Filtering: View interactions by type (Text, Call, Video) or sort chronologically (Newest/Oldest).
+   Smart Search: Instantly find specific events by searching for a friend's name or the interaction type.
+   Optimized Performance: Uses useMemo and useTransition for lag-free filtering even as data grows.<br/>
+3. <strong>Data-Driven Social Insights</strong><br/>
+   Visualise your social footprint on the Statistics page. The integration of Recharts PieCharts provides a breakdown of your interaction types, allowing you to see at a glance whether you're a "texter" or a "caller."<br/><br/>
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ How to Run Locally
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<strong>Clone the repository:</strong><br/>
+git clone https://github.com/ZunaidChowdhury/keen-keeper.git<br/>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<strong>Install dependencies:</strong><br/>
+npm install<br/>
 
-## Deploy on Vercel
+<strong>Run the development server:</strong><br/>
+npm run dev<br/>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<strong>Open in browser:</strong><br/>
+Navigate to http://localhost:3000<br/><br/>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📸 Screenshot - Desktop Version
+
+<div align="center">
+  <img src="./keen-keeper.png" width="100%" alt="Completed project image" />
+</div>
+
+<h1 align="center">
+Keen Keeper — Stay keen on your connections.  
+</h1>

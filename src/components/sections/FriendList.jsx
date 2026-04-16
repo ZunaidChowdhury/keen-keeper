@@ -8,7 +8,7 @@ export const dynamic = 'force-dynamic';
 
 const FriendList = async () => {
 
-    await wait(1500);
+    await wait(1000);
 
     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/friends.json`, {
         cache: 'no-store' // This prevents caching so it hits your delay every time
