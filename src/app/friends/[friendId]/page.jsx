@@ -47,7 +47,7 @@ const FriendDetailsPage = async ({ params }) => {
 
 
 
-  await wait(1000);
+  await wait(500);
   let friend = null;
   const { friendId } = await params
   if (isNaN(Number(friendId))) {
