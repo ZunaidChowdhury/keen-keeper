@@ -57,7 +57,7 @@ const GlobalContextProvider = ({ children }) => {
     useEffect(() => {
         const userActivity = getActivityFromLocalStorage();
         setUserActivity(userActivity);
-        console.log('context data: ', userActivity);
+        // console.log('context data: ', userActivity);
     }, [])
 
 

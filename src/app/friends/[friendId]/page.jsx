@@ -47,7 +47,7 @@ const FriendDetailsPage = async ({ params }) => {
 
 
 
-  await wait(2000);
+  await wait(1500);
   let friend = null;
   const { friendId } = await params
   if (isNaN(Number(friendId))) {
@@ -96,6 +96,7 @@ const FriendDetailsPage = async ({ params }) => {
               src={friend.picture}
               alt="David Kim"
               fill
+              sizes="(max-width: 80px)"
               className="rounded-full object-cover"
             />
           </div>

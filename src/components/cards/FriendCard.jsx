@@ -12,6 +12,7 @@ const FriendCard = ({ friend }) => {
                     src={friend.picture}
                     alt="David Kim"
                     fill
+                    sizes="(max-width: 80px)"
                     className="rounded-full object-cover"
                 />
             </div>
@@ -31,7 +32,7 @@ const FriendCard = ({ friend }) => {
             </div>
 
             {/* Status Badge */}
-            <span className={`px-4 py-1.5 ${ friend.status === 'almost due' ? 'bg-[#efad44]' : friend.status === 'overdue' ? 'bg-[#ef4444]' : friend.status === 'on-track' ? 'bg-[#244d3f]' : 'bg-gray-300'} text-white text-sm font-medium rounded-full shadow-md`}>
+            <span className={`px-4 py-1.5 ${friend.status === 'almost due' ? 'bg-[#efad44]' : friend.status === 'overdue' ? 'bg-[#ef4444]' : friend.status === 'on-track' ? 'bg-[#244d3f]' : 'bg-gray-300'} text-white text-sm font-medium rounded-full shadow-md`}>
                 {friend.status === 'almost due' ? 'Almost Due' : friend.status === 'overdue' ? 'Overdue' : friend.status === 'on-track' ? 'On-Track' : 'null'}
             </span>
         </Link>

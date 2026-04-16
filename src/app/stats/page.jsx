@@ -10,8 +10,8 @@ const StatsPage = () => {
         Friendship Analytics
       </h2>
 
-      <div className='bg-foreground rounded-lg shadow-sm border border-gray-200 h-102 p-8'>
-        <h5 className='text-theme-primary text-xl font-medium'>
+      <div className='bg-foreground rounded-lg shadow-sm border border-gray-200 h-132 p-8'>
+        <h5 className='text-theme-primary text-xl font-medium mb-6'>
           By Interaction Type
         </h5>
 

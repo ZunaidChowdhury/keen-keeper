@@ -6,7 +6,7 @@
     "email": "david.kim@techcorp.com",
     "days_since_contact": 2,
     "status": "almost due",
-    "tags": ["WORK"],
+    "tags": ["FAMILY"],
     "bio": "Former manager, agile expert",
     "goal": 70,
     "next_due_date": "2026-04-20"
@@ -30,7 +30,7 @@
     "email": "lisa.n@designstudio.io",
     "days_since_contact": 1,
     "status": "overdue",
-    "tags": ["WORK"],
+    "tags": ["CLOSE FRIEND"],
     "bio": "Creative lead, design mentor",
     "goal": 45,
     "next_due_date": "2026-03-25"
@@ -42,7 +42,7 @@
     "email": "james.wright@globetrotter.com",
     "days_since_contact": 1,
     "status": "overdue",
-    "tags": ["HOBBY", "TRAVEL"],
+    "tags": ["WORK"],
     "bio": "Travel buddy, photography pro",
     "goal": 30,
     "next_due_date": "2026-03-10"
@@ -54,7 +54,7 @@
     "email": "m.chen@fintech.com",
     "days_since_contact": 4,
     "status": "overdue",
-    "tags": ["WORK"],
+    "tags": ["CLOSE FRIEND"],
     "bio": "Tech architect, blockchain wiz",
     "goal": 30,
     "next_due_date": "2026-03-22"
@@ -138,7 +138,7 @@
     "email": "ryan.f@trailblazer.com",
     "days_since_contact": 7,
     "status": "on-track",
-    "tags": ["HOBBY", "TRAVEL"],
+    "tags": ["WORK"],
     "bio": "Outdoor guide, cycling enthusiast",
     "goal": 120,
     "next_due_date": "2026-06-15"

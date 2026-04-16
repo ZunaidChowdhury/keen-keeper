@@ -1,5 +1,4 @@
 'use client'
-import brandLogo from "../../public/assets/logo.png";
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation'
@@ -22,11 +21,11 @@ const NavBar = () => {
                 {/* left  */}
                 <Link href='/'>
                     <Image
-                        className='shrink-0'
-                        src={brandLogo}
-                        width={141}
-                        height={29}
+                        src='/assets/logo.png'
+                        width={140}
+                        height={30}
                         alt="Picture of the author"
+                        priority 
                     />
                 </Link>
 
