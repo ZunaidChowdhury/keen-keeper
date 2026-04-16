@@ -19,7 +19,7 @@ const FriendList = async () => {
         friendListData = await res.json();
     } else {
         return (
-            <div className='max-w-277.5 mx-auto mb-20 h-60 p-6 bg-foreground rounded-lg shadow-sm border border-gray-100 text-center flex flex-col items-center justify-center'>
+            <div className='px-4  max-w-285.5 mx-auto mb-20 h-60 p-6 bg-foreground rounded-lg shadow-sm border border-gray-100 text-center flex flex-col items-center justify-center'>
                 <p className='text-text-primary text-lg font-medium mb-6'>Failed to load data.</p>
                 <Link href={`/`} className='btn'><IoReload />Reload</Link>
             </div>
