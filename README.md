@@ -4,7 +4,7 @@ This is an assignment (#7) project of MERN stack course in programming hero batc
 
 Keen Keeper is a streamlined social activity tracker designed to help users maintain and monitor their digital interactions. Built for the modern social connector, it logs every "ping"—be it a call, text, or video chat—into a clean, searchable timeline, providing visual insights into social habits through interactive data analytics.
 
-Live on Netlify - https://keen-keeper-six-inky.vercel.app/
+Live on Vercel - https://keen-keeper-six-inky.vercel.app/
 <br/>
 <br/>
 
