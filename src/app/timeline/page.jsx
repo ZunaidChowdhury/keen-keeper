@@ -9,7 +9,7 @@ const TimelinePage = () => {
 
   return (
     <div className=' px-4  max-w-285.5 mx-auto py-10 tablet:py-20'>
-      <h2 className='text-text-primary text-4xl tablet:text-5xl font-bold mb-6 leading-none'>
+      <h2 className='text-text-primary text-center tablet:text-left text-4xl tablet:text-5xl font-bold mb-6 leading-none'>
         Timeline
       </h2>
 

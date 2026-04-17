@@ -8,7 +8,7 @@ import { LuClock3 } from "react-icons/lu";
 import { RiHome2Line } from "react-icons/ri";
 
 const navBtnActive = 'bg-theme-primary text-white'
-const navBtnInactive = 'bg-transparent  text-text-secondary border-none shadow-none'
+const navBtnInactive = 'bg-transparent  text-text-secondary border-none shadow-none hover:bg-gray-200 hover:text-text-primary' 
 
 
 const NavBar = () => {
@@ -45,7 +45,7 @@ const NavBar = () => {
 
                         <Link
                             href="/timeline"
-                            className={`btn px-4 py-3 text-base font-semibold ${pathname === '/timeline' ? navBtnActive : navBtnInactive}`}
+                            className={`btn px-4 py-3 text-base font-semibold  ${pathname === '/timeline' ? navBtnActive : navBtnInactive}`}
                         >
                             <LuClock3 className='w-6 h-5' />
                             Timeline
@@ -80,7 +80,7 @@ const NavBar = () => {
                                  md:hidden bg-foreground'>
                     <Link
                         href="/"
-                        className={`btn px-4 py-3 text-base font-semibold hover:bg-[#1c3f33] hover:text-white flex items-center justify-start ${pathname === '/' ? navBtnActive : navBtnInactive}`}
+                        className={`btn px-4 py-3 text-base font-semibold  flex items-center justify-start ${pathname === '/' ? navBtnActive : navBtnInactive}`}
                     >
                         <RiHome2Line className='w-6 h-5' />
                         Home
@@ -88,7 +88,7 @@ const NavBar = () => {
 
                     <Link
                         href="/timeline"
-                        className={`btn px-4 py-3 text-base font-semibold hover:bg-[#1c3f33] hover:text-white flex items-center justify-start ${pathname === '/timeline' ? navBtnActive : navBtnInactive}`}
+                        className={`btn px-4 py-3 text-base font-semibold  flex items-center justify-start ${pathname === '/timeline' ? navBtnActive : navBtnInactive}`}
                     >
                         <LuClock3 className='w-6 h-5' />
                         Timeline
@@ -96,7 +96,7 @@ const NavBar = () => {
 
                     <Link
                         href="/stats"
-                        className={`btn px-4 py-3 text-base font-semibold hover:bg-[#1c3f33] hover:text-white flex items-center justify-start ${pathname === '/stats' ? navBtnActive : navBtnInactive}`}
+                        className={`btn px-4 py-3 text-base font-semibold  flex items-center justify-start ${pathname === '/stats' ? navBtnActive : navBtnInactive}`}
                     >
                         <IoIosStats className='w-6 h-5' />
                         Stats
