@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import GlobalContextProvider from "@/contexts/GlobalContext";
 import { Bounce, ToastContainer } from "react-toastify";
 import DeveloperBar from "@/components/DeveloperBar";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -48,6 +49,7 @@ export default function RootLayout({ children }) {
             transition={Bounce}
           />
         </GlobalContextProvider>
+        <Analytics/>
       </body>
     </html>
   );
