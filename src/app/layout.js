@@ -4,6 +4,7 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import GlobalContextProvider from "@/contexts/GlobalContext";
 import { Bounce, ToastContainer } from "react-toastify";
+import DeveloperBar from "@/components/DeveloperBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-screen bg-background">
         <GlobalContextProvider>
+          <DeveloperBar />
           <NavBar />
           {children}
           <Footer />
